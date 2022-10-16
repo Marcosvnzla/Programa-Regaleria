@@ -3,7 +3,7 @@ package com.mycompany.tiendaregaloscasamiento;
 public class direccionEnvio {
     
     //Constructor
-    public direccionEnvio(String calle, int altura, int piso, char departamento, int cp) {
+    public direccionEnvio(String calle, Integer altura, int piso, char departamento, int cp) {
         this.calle = calle;
         this.altura = altura;
         this.piso = piso;
@@ -14,10 +14,10 @@ public class direccionEnvio {
     //Atributos
     
     private String calle;
-    private int altura;
-    private int piso;
+    private Integer altura;
+    private Integer piso;
     private char departamento;
-    private int cp;
+    private Integer cp;
     
     //Getters y setters
 
@@ -29,19 +29,19 @@ public class direccionEnvio {
         this.calle = calle;
     }
 
-    public int getAltura() {
+    public Integer getAltura() {
         return altura;
     }
 
-    public void setAltura(int altura) {
+    public void setAltura(Integer altura) {
         this.altura = altura;
     }
 
-    public int getPiso() {
+    public Integer getPiso() {
         return piso;
     }
 
-    public void setPiso(int piso) {
+    public void setPiso(Integer piso) {
         this.piso = piso;
     }
 
@@ -53,11 +53,11 @@ public class direccionEnvio {
         this.departamento = departamento;
     }
 
-    public int getCp() {
+    public Integer getCp() {
         return cp;
     }
 
-    public void setCp(int cp) {
+    public void setCp(Integer cp) {
         this.cp = cp;
     }
     

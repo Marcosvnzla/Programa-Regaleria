@@ -5,7 +5,7 @@ import java.util.Date;
 public class Parejas extends Usuario {
     
     //Constructor
-    public Parejas(String nombre, String nombreUsuario, int dni, String Apellido, int telefono, String mail) {
+    public Parejas(String nombre, String nombreUsuario, Integer dni, String Apellido, String telefono, String mail) {
         super(nombreUsuario, dni, Apellido, telefono, mail);
         this.nombre = nombre;
     }

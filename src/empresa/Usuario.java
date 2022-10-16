@@ -4,7 +4,7 @@ public class Usuario {
     
     //Constructor
 
-    public Usuario(String nombreUsuario, int dni, String Apellido, int telefono, String mail) {
+    public Usuario(String nombreUsuario, Integer dni, String Apellido, String telefono, String mail) {
         this.nombreUsuario = nombreUsuario;
         this.dni = dni;
         this.Apellido = Apellido;
@@ -15,9 +15,9 @@ public class Usuario {
     //Atributos
     
     private String nombreUsuario;
-    private int dni;
+    private Integer dni;
     private String Apellido;
-    private int telefono;
+    private String telefono;
     private String mail;
 
     //Getters y Setters
@@ -30,11 +30,11 @@ public class Usuario {
         this.nombreUsuario = nombreUsuario;
     }
 
-    public int getDni() {
+    public Integer getDni() {
         return dni;
     }
 
-    public void setDni(int dni) {
+    public void setDni(Integer dni) {
         this.dni = dni;
     }
 
@@ -46,11 +46,11 @@ public class Usuario {
         this.Apellido = Apellido;
     }
 
-    public int getTelefono() {
+    public Integer getTelefono() {
         return telefono;
     }
 
-    public void setTelefono(int telefono) {
+    public void setTelefono(String telefono) {
         this.telefono = telefono;
     }
 

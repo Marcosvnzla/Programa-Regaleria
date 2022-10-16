@@ -6,13 +6,13 @@ public class Invitados extends Usuario {
 
     //Constructor heredado
     
-    public Invitados(String nombreUsuario, int dni, String Apellido, int telefono, String mail) {
+    public Invitados(String nombreUsuario, Integer dni, String Apellido, String telefono, String mail) {
         super(nombreUsuario, dni, Apellido, telefono, mail);
     }
     
     //Constructor de clase
 
-    public Invitados(String mensaje, double saldo, String nombreUsuario, int dni, String Apellido, int telefono, String mail) {
+    public Invitados(String mensaje, Decimal saldo, String nombreUsuario, Integer dni, String Apellido, String telefono, String mail) {
         super(nombreUsuario, dni, Apellido, telefono, mail);
         this.mensaje = mensaje;
         this.saldo = saldo;
@@ -21,7 +21,7 @@ public class Invitados extends Usuario {
     //Atributos de clase
     
     private String mensaje;
-    private double saldo;
+    private Decimal saldo;
     
     //Getters y setters
 
@@ -33,11 +33,11 @@ public class Invitados extends Usuario {
         this.mensaje = mensaje;
     }
 
-    public double getSaldo() {
+    public Decimal getSaldo() {
         return saldo;
     }
 
-    public void setSaldo(double saldo) {
+    public void setSaldo(Decimal saldo) {
         this.saldo = saldo;
     }
     

@@ -5,7 +5,7 @@ public class Producto {
 
     //Constructor
     
-    public Producto(int codigoProducto, Date fechaFinalizacion, String nombre, String tipo, double precio, String color) {
+    public Producto(Integer codigoProducto, Date fechaFinalizacion, String nombre, String tipo, Decimal precio, String color) {
         this.codigoProducto = codigoProducto;
         this.fechaFinalizacion = fechaFinalizacion;
         this.nombre = nombre;
@@ -16,20 +16,20 @@ public class Producto {
     
     //Atributos
     
-    private int codigoProducto;
+    private Integer codigoProducto;
     private Date fechaFinalizacion;
     private String nombre;
     private String tipo;
-    private double precio;
+    private Decimal precio;
     private String color;
 
     //Getters y setters
     
-    public int getCodigoProducto() {
+    public Integer getCodigoProducto() {
         return codigoProducto;
     }
 
-    public void setCodigoProducto(int codigoProducto) {
+    public void setCodigoProducto(Integer codigoProducto) {
         this.codigoProducto = codigoProducto;
     }
 
@@ -57,11 +57,11 @@ public class Producto {
         this.tipo = tipo;
     }
 
-    public double getPrecio() {
+    public Decimal getPrecio() {
         return precio;
     }
 
-    public void setPrecio(double precio) {
+    public void setPrecio(Decimal precio) {
         this.precio = precio;
     }
 
