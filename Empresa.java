@@ -10,12 +10,28 @@ public class Empresa {
     }
     
     //Atributos
-    private List<Usuario> listaUsuario = new List<Usuario>();
+    private List<Usuario> listaUsuarios = new List<Usuario>();
     private Integer cuit;
     private String razonSocial;
     private List<Producto> listaProductos = new List<Producto>();
 
     //Getters y setters    
+    public List<Usuario> getUsuarios() {
+        return this.ListaUsuarios;
+    }
+
+    public void setUsuarios(List<Usuario> usuarios) {
+        this.listaUsuarios = usuarios;
+    }
+
+    public List<Producto> getProductos() {
+        return this.listaProductos;
+    }
+
+    public void setProductos(List<Producto> productos) {
+        this.listaProductos = productos;
+    }
+
     public Integer getCuit() {
         return cuit;
     }
