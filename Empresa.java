@@ -4,14 +4,13 @@ import javax.swing.text.html.ListView;
 
 public class Empresa {
 
-    //falta agregar al constructor los objetos de Usuario y de ListaProducto
-    public Empresa(Integer cuit, String razonSocial) {
+    public Empresa(Integer cuit, String razonSocial, List<Usuario> listaUsuarios,List<Producto> listaProductos) {
         this.cuit = cuit;
         this.razonSocial = razonSocial;
     }
     
     //Atributos
-    private Usuario usuario;
+    private List<Usuario> listaUsuario = new List<Usuario>();
     private Integer cuit;
     private String razonSocial;
     private List<Producto> listaProductos = new List<Producto>();
