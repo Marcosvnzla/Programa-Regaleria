@@ -1,27 +1,27 @@
 package com.mycompany.tiendaregaloscasamiento;
+import java.util.List;
+import javax.swing.text.html.ListView;
 
 public class Empresa {
 
     //falta agregar al constructor los objetos de Usuario y de ListaProducto
-    public Empresa(int cuit, String razonSocial) {
+    public Empresa(Integer cuit, String razonSocial) {
         this.cuit = cuit;
         this.razonSocial = razonSocial;
     }
     
     //Atributos
-    
-    //new Uusario nombreUsuario;  
-    private int cuit;
+    private Usuario usuario;
+    private Integer cuit;
     private String razonSocial;
-    // agregar objetivo de listaProductos;
+    private List<Producto> listaProductos = new List<Producto>();
 
     //Getters y setters    
-    
-    public int getCuit() {
+    public Integer getCuit() {
         return cuit;
     }
 
-    public void setCuit(int cuit) {
+    public void setCuit(Integer cuit) {
         this.cuit = cuit;
     }
 
@@ -34,8 +34,7 @@ public class Empresa {
     }
     
     //Métodos
-    
-    public void chequearDuplicados(){
+    public void chequearDuplicados(){ //se refiere a duplicados de productos?
     }
     
     public void altaUsuario(){
@@ -46,5 +45,4 @@ public class Empresa {
     
     public void editarUsuario(){
     }
-    
 }
